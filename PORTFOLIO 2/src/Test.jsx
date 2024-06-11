@@ -4,20 +4,27 @@ import './app.scss'
 function Test() {
     const [open,setOpen]=useState(false)
     const variants={
-        visible:{opacity:1,x:500},
+        visible:{
+            opacity:1,
+            // x:500,
+            transition:{staggerChildren:0.2}
+        },
+
         hidden:{opacity:0}
     }
+    const item=["item1","item2","item3","item.4"]
   return (
     <div className='course'>
-      <motion.div
-        // initial={{opacity:0,scale:0.5}}
-        variants={variants}
-        transition={{type:"spring",stiffness:100}}
-        // initial="hidden"
-        // animate="visible"
-        animate={open?"visible":"hidden"}
-        className="box"></motion.div>
-        <button onClick={()=>setOpen(pre=>!pre)}>Click</button>
+        <motion.ul initial="hidden" animate="visible" variants={variants}>
+            {
+                item.map((i)=>(
+                    <motion.li variants={variants}>
+                        {i}
+                    </motion.li>
+                ))
+            }
+        </motion.ul>
+        {/* <button onClick={()=>setOpen(pre=>!pre)}>Click</button> */}
     </div>
   )
 }
