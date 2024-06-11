@@ -1,0 +1,67 @@
+.hero{
+    height: calc(100vh - 100px);
+    background: linear-gradient(180deg,#0c0c1d,#111132);
+    overflow: hidden;
+    position: relative;
+    .slidingContainer{
+        position: absolute;
+        font-size: 50vh;
+        bottom: 0;
+        margin-bottom: 0;
+        color: #ffffff09;
+        // text ko sinlge line me lana
+        white-space: nowrap;
+        width: 50%;
+        font-weight: bold;
+    }
+    .imageContainer{
+        height: 100%;
+        position: absolute;
+        top: 0;
+        right: 0;
+        // background-color: #fff;
+    }
+    .wrapper{
+        max-width: 1366px;
+        height: 100%;
+        // margin: auto;
+        margin: auto;
+
+        .textcontainer{
+            height: 80%;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            gap: 40px;
+            width: 60%;
+        }
+        h2{
+            font-size: 30px;
+            color: rebeccapurple;
+            letter-spacing: 10px;
+        }
+        h1{
+            font-size: 70px;
+
+        }
+        .buttons{
+            display: flex;
+            gap: 20px;
+           button{
+            padding: 20px;
+            border: 1px solid wheat;
+            border-radius: 10px;
+            background-color: transparent;
+            color: white;
+            cursor: pointer;
+            font-weight: 300;
+            
+           }
+        }
+        img{
+            width: 50px;
+        }
+    }
+
+   
+}

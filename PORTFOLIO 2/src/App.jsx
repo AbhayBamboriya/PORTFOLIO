@@ -1,3 +1,4 @@
+import Hero from './Components/Hero/Hero';
 import Navbar from './Components/Navbar/Navbar';
 import SideBar from './Components/SideBar/SideBar';
 import Test from './Test';
@@ -5,7 +6,10 @@ import './app.scss'
 const App = () => {
   return <div>
       <SideBar/>
-      <section id="HomePage"><Navbar/></section>
+      <section id="HomePage">
+        <Navbar/>
+        <Hero/>
+      </section>
       <section id="Parallex">Parallax</section>
       <section id="Services">Services</section>
       <section >Psrallex</section>
