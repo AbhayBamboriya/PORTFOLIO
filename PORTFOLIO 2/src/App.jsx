@@ -1,15 +1,18 @@
 import Navbar from './Components/Navbar/Navbar';
+import SideBar from './Components/SideBar/SideBar';
 import Test from './Test';
 import './app.scss'
 const App = () => {
   return <div>
-      {/* <section><a href=""><Navbar/></a></section>
-      <section><a href="">Parallex</a></section>
-      <section>Services</section>
-      <section>Psrallex</section>
-      <section>Portfolio</section>
-      <section>Contact</section> */}
-      <Test/>
+      <SideBar/>
+      <section id="HomePage"><Navbar/></section>
+      <section id="Parallex">Parallax</section>
+      <section id="Services">Services</section>
+      <section >Psrallex</section>
+      <section id="Portfolio">Portfolio</section>
+      <section id='Contact'>Contact</section>
+      {/* <h1 className='text-cen ter'>Abhay</h1> */}
+      {/* <Test/> */}
   </div>;
 };
 

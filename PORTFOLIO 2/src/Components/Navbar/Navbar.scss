@@ -1,16 +1,24 @@
 .navbar{
     height: 100px;
-
+    // margin: 150px;
+    // margin: auto;
+    justify-content: space-between;
+    // background-color: red;
+    z-index: 1;
     .wrapper{
-        max-width: 1200px;
+        // max-width: 1200px;
         display: flex;
+        // background-color: yellow;
+        width: inherit;
         margin: auto;
         align-items: center;
         height: 100%;
-        justify-content: space-between;
+        justify-content: space-around;
+        // z-index: 2;
     }
     span{
         font-weight: bold;
+        font-size: xx-large;
     }
 
     .social{
